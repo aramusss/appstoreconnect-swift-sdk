@@ -14,7 +14,7 @@ extension APIEndpoint where T == AppInfoLocalizationsResponse {
     ///   - fields: Fields to return for included related types.
     ///   - limit: Number of resources to return.
     ///   - next: The next URL to use as a base. See `PagedDocumentLinks`.
-    public static func appInfos(
+    public static func appInfoLocalizations(
         forAppInfoWithId id: String,
         fields: [ListAppInfosForApp.Field]? = nil,
         include relationships: [ListAppInfosForApp.Relationship]? = nil,
@@ -25,7 +25,7 @@ extension APIEndpoint where T == AppInfoLocalizationsResponse {
         if let relationships = relationships { parameters.add(relationships) }
         if let limit = limit {
             parameters["limit"] = limit
-        } else if let nextLimit = next?.nextLimt {
+        } else if let nextLimit = next?.nextLimit {
             parameters["limit"] = nextLimit
         }
         if let nextCursor = next?.nextCursor { parameters["cursor"] = nextCursor }
