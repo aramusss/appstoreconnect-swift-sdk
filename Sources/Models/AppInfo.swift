@@ -29,7 +29,7 @@ public struct AppInfo: Codable {
         public let app: AppInfo.Relationships.App?
 
         // Not implemented yet
-        public let appInfoLocalizations: AppInfo.Relationships.AppInfoLocalizations?
+//        public let appInfoLocalizations: AppInfo.Relationships.AppInfoLocalizations?
 //        public let primaryCategory: AppInfo.Relationships.PrimaryCategory?
 //        public let primarySubcategoryOne: AppInfo.Relationships.PrimarySubcategoryOne?
 //        public let primarySubcategoryTwo: AppInfo.Relationships.PrimarySubcategoryTwo?
@@ -65,14 +65,6 @@ extension AppInfo.Relationships {
          /// AppInfo.Relationships.App.Links
         public let links: AppInfo.Relationships.App.Links?
     }
-    
-    public struct AppInfoLocalizations: Codable {
-        
-        // AppInfo.Relationships.AppInfoLocalizations.Data
-        public let data: AppInfo.Relationships.AppInfoLocalizations.Data
-        
-        public let links: AppInfo.Relationships.AppInfoLocalizations.Links?
-    }
 }
 
 // MARK: AppInfo.Relationships.App
@@ -87,34 +79,6 @@ extension AppInfo.Relationships.App {
         public private(set) var type: String = "apps"
     }
 
-    public struct Links: Codable {
-
-        /// uri-reference
-        public let related: URL?
-
-        /// uri-reference
-        public let `self`: URL?
-    }
-}
-
-// MARK: AppInfo.Relationships.AppInfoLocalizations
-extension AppInfo.Relationships.AppInfoLocalizations {
-    
-    public struct Data: Codable {
-        
-        /// The opaque resource ID that uniquely identifies the resource.
-        public let `id`: String
-
-        /// Localized name of the app
-        public let name: String?
-        
-        ///  Locale of the localization
-        public let locale: String?
-        
-        /// Localized subtitle of the app
-        public let subtitle: String?
-    }
-    
     public struct Links: Codable {
 
         /// uri-reference
