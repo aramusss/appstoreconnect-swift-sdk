@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39431A4C2882DD7200AB3C92 /* CustomerReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39431A4B2882DD7200AB3C92 /* CustomerReview.swift */; };
+		39431A4E2882DE1F00AB3C92 /* CustomerReviewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39431A4D2882DE1F00AB3C92 /* CustomerReviewsResponse.swift */; };
+		39431A502882E6DA00AB3C92 /* GetCustomerReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39431A4F2882E6DA00AB3C92 /* GetCustomerReviews.swift */; };
 		3969DA39286CBBCB001DC3A5 /* AppInfoLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969DA38286CBBCB001DC3A5 /* AppInfoLocalization.swift */; };
 		3969DA3B286CBCEB001DC3A5 /* AppInfoLocalizationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969DA3A286CBCEB001DC3A5 /* AppInfoLocalizationsResponse.swift */; };
 		3969DA3D286CBDD2001DC3A5 /* AppInfoLocalizationRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969DA3C286CBDD2001DC3A5 /* AppInfoLocalizationRelationship.swift */; };
@@ -411,6 +414,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39431A4B2882DD7200AB3C92 /* CustomerReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerReview.swift; sourceTree = "<group>"; };
+		39431A4D2882DE1F00AB3C92 /* CustomerReviewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerReviewsResponse.swift; sourceTree = "<group>"; };
+		39431A4F2882E6DA00AB3C92 /* GetCustomerReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCustomerReviews.swift; sourceTree = "<group>"; };
 		3969DA38286CBBCB001DC3A5 /* AppInfoLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoLocalization.swift; sourceTree = "<group>"; };
 		3969DA3A286CBCEB001DC3A5 /* AppInfoLocalizationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoLocalizationsResponse.swift; sourceTree = "<group>"; };
 		3969DA3C286CBDD2001DC3A5 /* AppInfoLocalizationRelationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoLocalizationRelationship.swift; sourceTree = "<group>"; };
@@ -1257,6 +1263,9 @@
 				OBJ_380 /* CertificateResponse.swift */,
 				OBJ_381 /* CertificateType.swift */,
 				OBJ_382 /* CertificatesResponse.swift */,
+				39431A4B2882DD7200AB3C92 /* CustomerReview.swift */,
+				39431A4F2882E6DA00AB3C92 /* GetCustomerReviews.swift */,
+				39431A4D2882DE1F00AB3C92 /* CustomerReviewsResponse.swift */,
 				OBJ_383 /* Device.swift */,
 				OBJ_384 /* DeviceClass.swift */,
 				OBJ_385 /* DeviceCreateRequest.swift */,
@@ -1372,7 +1381,7 @@
 			path = "Sales and Finance Reports";
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1390,7 +1399,6 @@
 				OBJ_445 /* Gemfile */,
 				OBJ_446 /* AppStoreConnect-Swift-SDK.podspec */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* TestFlight */ = {
@@ -1568,7 +1576,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_435 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1600,6 +1608,7 @@
 				OBJ_465 /* ReadBundleIdInformation.swift in Sources */,
 				OBJ_466 /* RegisterNewBundleID.swift in Sources */,
 				OBJ_467 /* CreateCertificate.swift in Sources */,
+				39431A4E2882DE1F00AB3C92 /* CustomerReviewsResponse.swift in Sources */,
 				OBJ_468 /* ListDownloadCertificates.swift in Sources */,
 				OBJ_469 /* ReadDownloadCertificateInformation.swift in Sources */,
 				OBJ_470 /* RevokeCertificate.swift in Sources */,
@@ -1639,6 +1648,7 @@
 				OBJ_504 /* ListAppInfosForApp.swift in Sources */,
 				OBJ_505 /* ReadAppInfoOfApp.swift in Sources */,
 				OBJ_506 /* GetApp.swift in Sources */,
+				39431A4C2882DD7200AB3C92 /* CustomerReview.swift in Sources */,
 				OBJ_507 /* GetBetaAppLocalizationIDsOfApp.swift in Sources */,
 				OBJ_508 /* GetBetaAppReviewDetailsResourceIDForApp.swift in Sources */,
 				OBJ_509 /* GetBetaAppReviewDetailsResourceOfApp.swift in Sources */,
@@ -1881,6 +1891,7 @@
 				OBJ_743 /* BetaTesterResponse.swift in Sources */,
 				OBJ_744 /* BetaTestersResponse.swift in Sources */,
 				OBJ_745 /* BrazilAgeRating.swift in Sources */,
+				39431A502882E6DA00AB3C92 /* GetCustomerReviews.swift in Sources */,
 				OBJ_746 /* Build.swift in Sources */,
 				OBJ_747 /* BuildAppEncryptionDeclarationLinkageRequest.swift in Sources */,
 				OBJ_748 /* BuildAppEncryptionDeclarationLinkageResponse.swift in Sources */,
