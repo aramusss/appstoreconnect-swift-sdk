@@ -7,7 +7,7 @@ extension APIEndpoint where T == CustomerReviewsResponse {
     ///   - fields: Fields to return for included related types.
     ///   - limit: Number of resources to return.
     ///   - next: The next URL to use as a base. See `PagedDocumentLinks`.
-    public static func appInfoLocalizations(
+    public static func getCustomerReviews(
         forAppWithId id: String,
         fields: [GetCustomerReviews.Field]? = nil,
         filter: [GetCustomerReviews.Filter]? = nil,
