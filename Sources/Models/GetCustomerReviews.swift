@@ -11,6 +11,7 @@ extension APIEndpoint where T == CustomerReviewsResponse {
         forAppWithId id: String,
         fields: [GetCustomerReviews.Field]? = nil,
         filter: [GetCustomerReviews.Filter]? = nil,
+        sort: [GetCustomerReviews.Sort]? = nil,
         limit: Int? = nil,
         next: PagedDocumentLinks? = nil) -> APIEndpoint {
         var parameters = [String: Any]()
@@ -58,6 +59,17 @@ public enum GetCustomerReviews {
                 return ("territory", values.joinedByCommas())
             }
         }
+    }
+    
+    public enum Sort: String, CaseIterable, NestableQueryParameter {
+        case createdDateAscending = "createdDate"
+        case createdDateDescending = "-createdDate"
+        
+        case ratingAscending = "rating"
+        case ratingDescending = "-rating"
+        
+        static var key: String = "sort"
+        var pair: NestableQueryParameter.Pair { return (nil, rawValue) }
     }
 }
 
