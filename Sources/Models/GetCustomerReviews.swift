@@ -16,6 +16,7 @@ extension APIEndpoint where T == CustomerReviewsResponse {
         next: PagedDocumentLinks? = nil) -> APIEndpoint {
         var parameters = [String: Any]()
         if let fields = fields { parameters.add(fields) }
+        if let sort = sort { parameters.add(sort) }
         if let limit = limit {
             parameters["limit"] = limit
         } else if let nextLimit = next?.nextLimit {
